@@ -33,9 +33,9 @@ function Homeslider() {
         />
       ))}
           <Image
-          src='/logorev.png'
-          height={500}
-          width={500}
+          src='/salogo.png'
+          height={900}
+          width={900}
           className="overlay-logo"
           />
       <div className="indicator">
