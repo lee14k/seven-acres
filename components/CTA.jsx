@@ -7,6 +7,7 @@ return (
    
   <h1 className="text-8xl my-4">Looking for flowers?</h1>
   <p className="text-xl">Spring has sprung. Come visit us in Hyde and see our gorgeous blooms</p>
+  <button>Learn More</button>
 </div>
 )
 }

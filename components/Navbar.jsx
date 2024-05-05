@@ -8,12 +8,12 @@ import { useMediaQuery } from "react-responsive";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
+  { name: "Our Plants & Flowers", href: "/flowers-plants", current: false},
   {
     name: "Services",
     href: "/services",
     current: false,
     children: [
-      { name: "Flowers", href: "/flowers" },
       { name: "Landscaping", href: "/landscaping" },
       { name: "Home Repair", href: "/home-repair" },
       { name: "Trees", href: "/trees" },
