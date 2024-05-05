@@ -508,3 +508,9 @@ flex-direction:column;}
   text-decoration: none;
   cursor: pointer;
 }
+
+.flower-bg{
+  background-image:url('/Flowers_Lo-Res-8319.jpg');
+  height:25rem;
+  background-size: cover;
+}

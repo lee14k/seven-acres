@@ -33,7 +33,7 @@ function Homeslider() {
         />
       ))}
           <Image
-          src='/salogo.png'
+          src='/strokesa2.png'
           height={900}
           width={900}
           className="overlay-logo"

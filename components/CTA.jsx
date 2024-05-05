@@ -1,18 +1,12 @@
 import Image from "next/image";
 export default function CTA () {
 return (
-    <div className="grid grid-cols-2">
-<div> <Image
-        src='/hang2.png'
-        height={900}
-        width={900}
-
-        /></div>
-<div className="flex flex-col justify-center items-center">
    
-  <h1 className="text-8xl">Hey!</h1>
-  <p>Buy our stuff!</p>
+
+<div className="flex flex-col justify-center items-center flower-bg text-white">
+   
+  <h1 className="text-8xl my-4">Looking for flowers?</h1>
+  <p className="text-xl">Spring has sprung. Come visit us in Hyde and see our gorgeous blooms</p>
 </div>
-    </div>
 )
 }

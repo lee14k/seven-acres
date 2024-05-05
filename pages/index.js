@@ -3,6 +3,8 @@ import Slideshow from "../components/Slideshow";
 import Navbar from "@/components/Navbar";
 import CTA from "@/components/CTA";
 import ServicesTripleBox from "@/components/ServicesTripleBox";
+import PhotoRightTextLeft from "@/components/PhotoRightTextLeft";
+import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main
@@ -10,8 +12,11 @@ export default function Home() {
     >
       <Navbar/>
      <Slideshow/>
+     <PhotoRightTextLeft/>
+
      <CTA/>
      <ServicesTripleBox/>
+     <Footer/>
     </main>
   );
 }

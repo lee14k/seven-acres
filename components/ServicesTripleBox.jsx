@@ -1,6 +1,9 @@
 const ServicesTripleBox =()=> {
     return (
-        <div className="grid grid-cols-3">
+        <div className="flex flex-col justify-center items-center">     
+            <h1>Our Services</h1>  
+            <p>In addition to our blooms, we offer a wide range of services.</p>
+            <div className="grid grid-cols-3 gap-24">
             <div className="services-triple-box-item">
                 <h2>Service 1</h2>
                 <p>Service 1 description</p>
@@ -14,6 +17,8 @@ const ServicesTripleBox =()=> {
                 <p>Service 3 description</p>
             </div>
             </div>
+            </div>
+ 
     )
 }
 export default ServicesTripleBox;

@@ -4,7 +4,7 @@ const Footer = () => {
     <div className="grid grid-cols-3">
       <div>
         <ul>
-            <li></li>
+            <li>Address</li>
             <li></li>
             <li></li>
         </ul>
@@ -18,7 +18,7 @@ const Footer = () => {
       </div>
       <div>
       <Image
-          src='/SevenAcregarden_logo.png'
+          src='/strokesa2.png'
           height={300}
           width={300}
           className="overlay-logo"
@@ -30,3 +30,4 @@ const Footer = () => {
     </div>
   );
 };
+export default Footer;
