@@ -1,14 +1,15 @@
 const Paintsvg = () => {
     return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="800" viewBox="0 0 1200 800">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="900" viewBox="0 0 1000 800">
         <defs>
-          {/* Increase pattern size to cover the whole shape */}
-          <pattern id="image-pattern" patternUnits="userSpaceOnUse" width="1200" height="800">
-            <image href="/Flowers_Lo-Res-8305.jpg" width="1200" height="800" />
+          {/* Adjust pattern size to fit the viewBox */}
+          <pattern id="image-pattern" patternUnits="userSpaceOnUse" width="1000" height="800">
+            {/* Use preserveAspectRatio to maintain the original image proportions */}
+            <image href="/Flowers_Lo-Res-8336.jpg" width="1500" height="1200" x="-100" y="-300" preserveAspectRatio="xMidYMid slice" />
           </pattern>
         </defs>
   
-        {/* Adjust viewBox to cover the path's dimensions */}
+        {/* Ensure the entire paint stroke path is visible and correctly aligned */}
         <path
           fill="url(#image-pattern)"
           d="M843.5661,587.1768c-4.2149-12.42-9.8699-27.8048-22.5371-32.7155  

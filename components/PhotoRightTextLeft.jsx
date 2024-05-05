@@ -2,27 +2,23 @@ import Image from "next/image";
 import Paintsvg from "./Paintsvg";
 const PhotoRightTextLeft = () => {
   return (
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-2 relative">
           <div>
-      <Image
-        src='/Flowers_Lo-Res-8305.jpg'
-        height={500}
-        width={500}
-
-        />
+     
         <Paintsvg/>
         <Image
  src='/sa.png'
- height={500}
- width={500}
+ height={400}
+ width={400}
+ className="absolute bottom-10 left-128 z-10"
 
 />
       </div>
-      <div>
-        <h1>
+      <div className="flex flex-col justify-center items-center">
+        <h1 className="text-6xl">
         Flowers, trees, and more
         </h1>
-        <p>Local</p>
+        <p className="text-3xl">Local</p>
       </div>
     
     </div>
