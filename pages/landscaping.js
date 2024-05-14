@@ -13,7 +13,7 @@ export default function landscaping () {
     return (
         <div>
 <Navbar/>
-<HeadlineBox/>
+<HeadlineBox backgroundImage="/Flowers_Lo-Res-8338.jpg" headline="Landscaping" />
 <NewMenu/>
         </div>
     )

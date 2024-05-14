@@ -13,8 +13,7 @@ export default function trees () {
     return (
         <div>
 <Navbar/>
-<HeadlineBox/>
-<NewMenu/>
+<HeadlineBox backgroundImage="/Flowers_Lo-Res-8338.jpg" headline="Trees" /><NewMenu/>
         </div>
     )
 }

@@ -13,8 +13,7 @@ export default function homeRepair () {
     return (
         <div>
 <Navbar/>
-<HeadlineBox/>
-<NewMenu/>
+<HeadlineBox backgroundImage="/Flowers_Lo-Res-8338.jpg" headline="Home Repair" /><NewMenu/>
         </div>
     )
 }

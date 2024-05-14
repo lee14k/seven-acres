@@ -6,7 +6,7 @@ return (
 <div className="flex flex-col justify-center items-center flower-bg text-white">
    
   <h1 className="text-8xl my-4">Looking for flowers?</h1>
-  <p className="text-xl">Spring has sprung. Come visit us in Hyde and see our gorgeous blooms</p>
+  <p className="text-4xl">Spring has sprung. Come visit us in Hyde and see our gorgeous blooms</p>
   <button>Learn More</button>
 </div>
 )
