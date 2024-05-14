@@ -7,13 +7,14 @@ import PhotoRightTextLeft from "@/components/PhotoRightTextLeft";
 import HeadlineBox from "@/components/HeadlineBox";
 import Footer from "@/components/Footer";
 import FlowersGrid from "@/components/FlowersGrid";
+import NewMenu from "@/components/NewMenu";
+
 export default function FlowersPlants () {
     return (
         <div>
 <Navbar/>
 <HeadlineBox/>
-<FlowersGrid/>
-
+<NewMenu/>
         </div>
     )
 }

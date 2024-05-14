@@ -19,7 +19,7 @@ const navigation = [
       { name: "Trees", href: "/trees" },
     ],
   },
-  { name: "About", href: "/about", current: false },
+  //{ name: "About", href: "/about", current: false },
   { name: "Contact", href: "/contact", current: false },
 ];
 
