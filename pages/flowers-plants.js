@@ -13,7 +13,7 @@ export default function FlowersPlants () {
     return (
         <div>
 <Navbar/>
-<HeadlineBox/>
+<HeadlineBox backgroundImage="/Flowers_Lo-Res-8338.jpg" headline="Flowers & Plants" />
 <NewMenu/>
         </div>
     )

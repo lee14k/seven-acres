@@ -8,7 +8,7 @@ import { useMediaQuery } from "react-responsive";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "Our Plants & Flowers", href: "/flowers-plants", current: false},
+  { name: "Plants & Flowers", href: "/flowers-plants", current: false},
   {
     name: "Services",
     href: "/services",

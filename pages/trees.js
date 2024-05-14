@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 import FlowersGrid from "@/components/FlowersGrid";
 import NewMenu from "@/components/NewMenu";
 
-export default function homeRepair () {
+export default function trees () {
     return (
         <div>
 <Navbar/>
