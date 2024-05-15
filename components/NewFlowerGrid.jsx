@@ -1,25 +1,21 @@
 import { useState } from "react";
 
-export default function FlowersGrid({services}) {
-  // Define the services data
+export default function FlowersGrid({ services }) {
+  const [flipStates, setFlipStates] = useState(new Array(services.length).fill(false));
 
-  const [flipStates, setFlipStates] = useState(
-    new Array(services.length).fill(false)
-  );
   const handleFlip = (index) => {
     const newFlipStates = [...flipStates];
     newFlipStates[index] = !newFlipStates[index];
     setFlipStates(newFlipStates);
   };
+
   return (
     <div>
-      <div className="gridwrapper front ">
+      <div className="gridwrapper front">
         {services.map((service, index) => (
           <div
             onClick={() => handleFlip(index)}
-            className={`${service.className} ${
-              flipStates[index] ? "flip" : ""
-            }`}
+            className={`${service.className} ${flipStates[index] ? "flip" : ""}`}
             key={service.title}
             style={{
               backgroundImage: `url(${service.img || "default_image_path_here.jpg"})`,
@@ -29,7 +25,6 @@ export default function FlowersGrid({services}) {
             }}
           >
             <h2 className="gridhead">{service.title}</h2>
-
             <div className="back" onClick={() => handleFlip(index)}>
               {service.description}
             </div>
