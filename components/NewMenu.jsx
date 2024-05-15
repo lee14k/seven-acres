@@ -68,7 +68,7 @@ const ParentComponent = () => {
 
             <li className="flex flex-col justify-center items-center">
               <button
-                onClick={() => setActiveComponent("C")}
+                onClick={() => setActiveComponent("E")}
                 className="mt-2 bg-emerald-950 py-2 px-52 text-white text-xl"
               >
                 Vegetables & Herbs
