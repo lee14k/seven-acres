@@ -17,18 +17,18 @@ export default function FlowersGrid({services}) {
         {services.map((service, index) => (
           <div
             onClick={() => handleFlip(index)}
-            className={`${service.className} ${
+            className={`${service.className}  ${
               flipStates[index] ? "flip" : ""
             }`}
             key={service.title}
             style={{
-              backgroundImage: `url(${service.img || "default_image_path_here.jpg"})`,
+              backgroundImage: `url(${service.img || "fleurs.png"})`,
               backgroundSize: "60% 100%",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
             }}
           >
-            <h2 className="gridhead">{service.title}</h2>
+            <h2 className="gridhead bg-gray-200">{service.title}</h2>
 
             <div className="back" onClick={() => handleFlip(index)}>
               {service.description}
