@@ -14,6 +14,7 @@ export default function FlowersPlants () {
         <div>
 <Navbar/>
 <HeadlineBox backgroundImage="/Flowers_Lo-Res-8338.jpg" headline="Flowers & Plants" />
+<p>Click the tabs below to learn more about our plants and flowers</p>
 <NewMenu/>
         </div>
     )
