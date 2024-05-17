@@ -2,7 +2,7 @@ export default function HeadlineBox({ backgroundImage, headline }) {
     return (
         <div>
             <div
-                className="headlineboxbg flex flex-col justify-center items-center"
+                className="headlineboxbg flex flex-col justify-center items-center text-center"
                 style={{ backgroundImage: `url(${backgroundImage})` }}
             >
                 <div className="gradient"></div>

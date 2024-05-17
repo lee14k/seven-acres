@@ -309,12 +309,12 @@ const shade=[
     
 export default function ShrubsTrees () {
     return (
-        <div>
-            <h1>Fruit Trees</h1>
+        <div className="flex flex-col justify-center items-center">
+            <h1 className="my-10 text-8xl">Fruit Trees</h1>
             <FlowersGrid services={services} />
-            <h1>Evergreens</h1>
+            <h1 className="my-10 text-8xl">Evergreens</h1>
             <FlowersGrid services={evergreens} />
-            <h1>Ornamental & Shade Trees</h1>
+            <h1 className="my-10 text-8xl">Ornamental & Shade Trees</h1>
             <FlowersGrid services={shade} />
             <h1></h1>
         </div>

@@ -1,35 +1,35 @@
 import Image from "next/image";
 const ServicesTripleBox =()=> {
     return (
-        <div className="flex flex-col justify-center items-center">     
+        <div className="flex flex-col justify-center items-center my-10">     
             <h1 className="text-6xl">Our Services</h1>  
             <p className="text-3xl">In addition to our blooms, we offer a wide range of services.</p>
             <div className="grid lg:grid-cols-3 gap-24">
-            <div className="services-triple-box-item">
+            <div className="services-triple-box-item flex flex-col justify-center items-center">
                 <Image
                     src="/Flowers_Lo-Res-8305.jpg"
                     alt="Landscaping"
                     width={300}
                     height={300}/>
-                <h2>Tree Planting</h2>
+                <h2 className="text-4xl">Tree Planting</h2>
                 <p>Service 1 description</p>
             </div>
-            <div className="services-triple-box-item">
+            <div className="services-triple-box-item flex flex-col justify-center items-center">
             <Image
                     src="/Flowers_Lo-Res-8305.jpg"
                     alt="Landscaping"
                     width={300}
                     height={300}/>
-                <h2>Landscaping</h2>
+                <h2 className="text-4xl">Landscaping</h2>
                 <p>Service 2 description</p>
             </div>
-            <div className="services-triple-box-item">
+            <div className="services-triple-box-item flex flex-col justify-center items-center">
             <Image
                     src="/Flowers_Lo-Res-8305.jpg"
                     alt="Landscaping"
                     width={300}
                     height={300}/>
-                <h2>Home Repair</h2>
+                <h2 className="text-4xl">Home Repair</h2>
                 <p>Service 3 description</p>
             </div>
             </div>

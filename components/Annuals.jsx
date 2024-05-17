@@ -395,8 +395,8 @@ const services = [
 ]
 export default function Annuals () {
     return (
-        <div>
-            <h1>Annuals</h1>
+        <div className="flex flex-col justify-center items-center">
+            <h1 className="my-10 text-8xl">Annuals</h1>
             <FlowersGrid services={services} />
         </div>
     )

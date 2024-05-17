@@ -163,8 +163,10 @@ const services = [
   ]
 export default function VegetableHerb () {
     return (
-        <div>
-            <h1>Vegetables and Herbs</h1>
+      <div>
+        <div className="flex flex-col justify-center items-center">
+            <h1 className="my-10 text-8xl">Vegetables and Herbs</h1>
+            </div>
             <FlowersGrid services={services} />
         </div>
     )

@@ -4,9 +4,7 @@ import Perennials from "./Perennials";
 import ShrubsTrees from "./ShrubsTrees";
 import SmallFruits from "./SmallFruits";
 import VegetableHerb from "./VegetableHerb";
-import { Merriweather } from "next/font/google";
 
-const merriweather = Merriweather({ weight: "400", subsets: ["latin"] });
 
 const ParentComponent = () => {
   const [activeComponent, setActiveComponent] = useState("");
@@ -29,7 +27,7 @@ const ParentComponent = () => {
   };
 
   return (
-    <div className={merriweather.className}>
+    <div>
       <div className="mt-12">
         <div>
           <ul className="grid lg:grid-cols-5 gap-4">
@@ -46,7 +44,7 @@ const ParentComponent = () => {
               >
                 <button
                   onClick={() => setActiveComponent(item.value)}
-                  className="bg-emerald-950 py-2 mt-2 w-full max-w-xs text-white text-xl"
+                  className="bg-rose-700 py-2 mt-2 w-full max-w-xs text-white text-xl"
                 >
                   {item.label}
                 </button>

@@ -220,8 +220,10 @@ const services = [
   ]
 export default function Perennials () {
     return (
-        <div>
-            <h1>Perennials</h1>
+      <div>
+        <div className="flex flex-col justify-center items-center">
+            <h1 className="my-10 text-8xl">Perennials</h1>
+            </div>
             <FlowersGrid services={services} />
         </div>
     )

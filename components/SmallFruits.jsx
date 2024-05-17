@@ -38,8 +38,10 @@ const services = [
   ]
 export default function SmallFruits () {
     return (
-        <div>
-            <h1>Small Fruits</h1>
+      <div>
+        <div className="flex flex-col justify-center items-center">
+            <h1 className="my-10 text-8xl">Small Fruits</h1>
+            </div>
             <FlowersGrid services={services} />
         </div>
     )

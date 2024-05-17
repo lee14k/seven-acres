@@ -3,7 +3,7 @@ import Paintsvg from "./Paintsvg";
 const PhotoRightTextLeft = () => {
   return (
     <div className="grid lg:grid-cols-2 relative">
-          <div className="sm:my-48 ">
+          <div className="lg:my-0 sm:my-48">
      
         <Paintsvg/>
         <Image
@@ -14,11 +14,11 @@ const PhotoRightTextLeft = () => {
 
 />
       </div>
-      <div className="sm:my-24 lg:flex flex-col justify-center items-center">
+      <div className=" lg:flex flex-col justify-center items-center">
         <h1 className="text-6xl">
         Flowers, trees, and more
         </h1>
-        <p className="text-3xl">Local</p>
+        <p className="text-3xl">Local blooms at affordable prices. Seven Acre Gardens is the premier stop for all of your landscaping, floral, and tree needs. Come check us out and see the gorgeous blooms we have to offer</p>
       </div>
     
     </div>
