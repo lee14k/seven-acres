@@ -6,8 +6,8 @@ return (
 
 <div className="flex flex-col justify-center items-center flower-bg text-white">
    
-  <h1 className="text-8xl my-4">Looking for flowers?</h1>
-  <p className="text-4xl my-4">Spring has sprung. Come visit us in Hyde and see our gorgeous blooms</p>
+  <h1 className="text-8xl my-4 gridhead">Looking for flowers?</h1>
+  <p className="text-4xl my-4 shadowed">Come visit us in Hyde, MI and see our gorgeous blooms</p>
   <Link href='/flowers-plants'>
   <button
         type="button"
