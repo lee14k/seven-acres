@@ -14,7 +14,7 @@ export default function trees () {
     return (
         <div>
 <Navbar/>
-<HeadlineBox backgroundImage="/Flowers_Lo-Res-8338.jpg" headline="Trees" /><NewMenu/>
+<HeadlineBox backgroundImage="/Flowers_Lo-Res-8338.jpg" headline="Trees" />
 <TreeFill/>
         </div>
     )

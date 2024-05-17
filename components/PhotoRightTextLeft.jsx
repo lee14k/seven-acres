@@ -2,7 +2,7 @@ import Image from "next/image";
 import Paintsvg from "./Paintsvg";
 const PhotoRightTextLeft = () => {
   return (
-    <div className="grid grid-cols-2 relative">
+    <div className="grid lg:grid-cols-2 relative">
           <div className="sm:my-48 ">
      
         <Paintsvg/>

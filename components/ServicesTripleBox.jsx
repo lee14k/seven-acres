@@ -4,7 +4,7 @@ const ServicesTripleBox =()=> {
         <div className="flex flex-col justify-center items-center">     
             <h1 className="text-6xl">Our Services</h1>  
             <p className="text-3xl">In addition to our blooms, we offer a wide range of services.</p>
-            <div className="grid grid-cols-3 gap-24">
+            <div className="grid lg:grid-cols-3 gap-24">
             <div className="services-triple-box-item">
                 <Image
                     src="/Flowers_Lo-Res-8305.jpg"
