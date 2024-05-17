@@ -3,7 +3,7 @@ import Paintsvg from "./Paintsvg";
 const PhotoRightTextLeft = () => {
   return (
     <div className="grid grid-cols-2 relative">
-          <div>
+          <div className="sm:my-48 ">
      
         <Paintsvg/>
         <Image
@@ -14,7 +14,7 @@ const PhotoRightTextLeft = () => {
 
 />
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="sm:my-24 lg:flex flex-col justify-center items-center">
         <h1 className="text-6xl">
         Flowers, trees, and more
         </h1>

@@ -24,7 +24,7 @@ function Homeslider() {
     }, [activeIndex]); // add activeIndex as dependency to re-run useEffect when activeIndex changes
   
     return (
-      <div className="slideshow">
+      <div className="slideshow ">
       {images.map((image, index) => (
         <div
           key={index}

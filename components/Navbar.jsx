@@ -1,8 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
 import NavMobile from "./NavMobile";
 import { useMediaQuery } from "react-responsive";
 
@@ -19,7 +18,6 @@ const navigation = [
       { name: "Trees", href: "/trees" },
     ],
   },
-  //{ name: "About", href: "/about", current: false },
   { name: "Contact", href: "/contact", current: false },
 ];
 
@@ -30,15 +28,22 @@ function classNames(...classes) {
 export default function Navbar() {
   const isMobile = useMediaQuery({ maxWidth: 800 });
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [hydrated, setHydrated] = useState(false);
+
+  useEffect(() => {
+    setHydrated(true);
+  }, []);
 
   const toggleDropdown = (itemName) => {
     setActiveDropdown(activeDropdown === itemName ? null : itemName);
   };
 
+  if (!hydrated) {
+    return null; // or return a loading spinner if appropriate
+  }
+
   return (
     <div className="text-3xl">
-      {" "}
-      {/* Added a surrounding div */}
       {isMobile ? (
         <NavMobile />
       ) : (
@@ -48,19 +53,12 @@ export default function Navbar() {
               <div className="flex justify-center pt-8">
                 <div className="flex h-12 justify-center items-center">
                   <div className="absolute inset-y-0 left-0 flex sm:hidden">
-                    {/* Mobile menu button */}
                     <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                       <span className="sr-only">Open main menu</span>
                       {open ? (
-                        <XMarkIcon
-                          className="block h-6 w-6"
-                          aria-hidden="true"
-                        />
+                        <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                       ) : (
-                        <Bars3Icon
-                          className="block h-6 w-6"
-                          aria-hidden="true"
-                        />
+                        <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                       )}
                     </Disclosure.Button>
                   </div>
