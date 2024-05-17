@@ -8,12 +8,14 @@ import HeadlineBox from "@/components/HeadlineBox";
 import Footer from "@/components/Footer";
 import FlowersGrid from "@/components/FlowersGrid";
 import NewMenu from "@/components/NewMenu";
+import TreeFill from "@/components/TreeFill";
 
 export default function trees () {
     return (
         <div>
 <Navbar/>
 <HeadlineBox backgroundImage="/Flowers_Lo-Res-8338.jpg" headline="Trees" /><NewMenu/>
+<TreeFill/>
         </div>
     )
 }
