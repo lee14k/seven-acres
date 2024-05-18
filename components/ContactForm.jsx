@@ -90,9 +90,7 @@ export default function ContactForm() {
               Phone number
             </label>
             <div className="relative mt-2.5">
-              <div className="absolute inset-y-0 left-0 flex items-center">
              
-              </div>
               <input
                 type="tel"
                 name="phoneNumber"
