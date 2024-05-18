@@ -31,7 +31,7 @@ export default function ContactForm() {
     });
     
     try {
-      const response = await fetch("pages/api/sendEmail.js", {
+      const response = await fetch("/api/sendEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
