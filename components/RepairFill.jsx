@@ -1,3 +1,4 @@
+import Link from 'next/link'
 export default function RepairFill() {
     return (
       <div className="bg-white py-24 sm:py-32">
@@ -8,36 +9,28 @@ export default function RepairFill() {
             <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-gray-700 lg:max-w-none lg:grid-cols-2">
               <div>
                 <p>
-                  Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
-                  vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque
-                  erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris
-                  semper sed amet vitae sed turpis id.
+                When our planting season winds down, we turn to local homeowners to help upkeep their properties with our repair services. We offer a variety of services to help you maintain your home.
                 </p>
                 <p className="mt-8">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
-                  fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
-                  adipiscing egestas.
+                  With decades of experience, we can assist you with almost any home repair project. We can help you with everything from fixing a leaky faucet to fixing up your kitchen. We can also help you with larger projects, such as building a deck or adding a room to your home. We can help you with both interior and exterior repairs, and we can help you with both small and large projects.
                 </p>
               </div>
               <div>
                 <p>
-                  Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim
-                  eget. Est augue maecenas risus nulla ultrices congue nunc tortor.
+                  We are licensed, and insured so you can trust us to do the job right. We are also locally owned and operated, so you can trust us to provide you with the best service possible. We are committed to providing you with quality work at affordable prices, and we are committed to providing you with the best customer service possible.
                 </p>
                 <p className="mt-8">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
-                  fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
-                  adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
+                Not sure if we'll do it? Want to check with us? Contact us and we'll be happy to help you with your home repair and project needs.
                 </p>
               </div>
             </div>
             <div className="mt-10 flex">
-              <a
-                href="#"
+              <Link
+                href="/contact"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Contact us
-              </a>
+              </Link>
             </div>
           </div>
         </div>

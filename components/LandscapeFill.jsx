@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function LandscapeFill() {
     return (
       <div className="bg-white py-24 sm:py-32">
@@ -8,36 +10,28 @@ export default function LandscapeFill() {
             <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-gray-700 lg:max-w-none lg:grid-cols-2">
               <div>
                 <p>
-                  Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
-                  vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque
-                  erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris
-                  semper sed amet vitae sed turpis id.
+                  Need some help with your lawn? Need a new garden? We can help! We have the experience, the tools, and the knowledge to help you create the garden or lawn of your dreams.
                 </p>
                 <p className="mt-8">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
-                  fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
-                  adipiscing egestas.
+                  In addition to providing the plants, we can provide our design services to help you create the perfect garden or lawn. We can help you choose the right plants for your space, and we can help you design the layout of your garden or lawn. We can also help you with the installation of your garden or lawn, and we can help you maintain it.
                 </p>
               </div>
               <div>
                 <p>
-                  Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim
-                  eget. Est augue maecenas risus nulla ultrices congue nunc tortor.
+                  We have a wide selection of plants to choose from, including perennials, annuals, shrubs, and trees. We can help you choose the right plants for your space to ensure sustainability and beauty. 
                 </p>
                 <p className="mt-8">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
-                  fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
-                  adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
+                 Not sure if we'll do it? Want to check and ensure we offer the right plants? Contact us and we'll be happy to help you with your garden or lawn needs.
                 </p>
               </div>
             </div>
             <div className="mt-10 flex">
-              <a
-                href="#"
+              <Link
+                href="/contact"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Contact us
-              </a>
+              </Link>
             </div>
           </div>
         </div>
