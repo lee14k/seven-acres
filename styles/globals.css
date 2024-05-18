@@ -672,3 +672,7 @@
   background-image:url('/Flowers_Lo-Res-8316.jpg');
   background-size: cover;
 }
+.text-background {
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: saturate(180%) blur(10px);
+}
