@@ -7,6 +7,44 @@ function classNames(...classes) {
 }
 
 export default function ContactForm() {
+  const [isModalOpen, setIsModalOpen] = useState(false); 
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+  
+    // Create a FormData object, passing in the form event target
+    const form = event.target;
+    const formData = new FormData(form);
+  
+    // Retrieve form data using FormData methods
+    const data = {
+      firstName: formData.get('firstName'),
+      email: formData.get('email'),
+      phoneNumber: formData.get('phoneNumber'),
+      message: formData.get('message'),
+    };
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+  
+      if (response.ok) {
+        setIsModalOpen(true);
+        console.log("Form submitted successfully");
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      console.error("There was an error submitting the form:", error);
+    }
+  };
+      const closeModal = () => {
+     setIsModalOpen(false);
+   };
   const [agreed, setAgreed] = useState(false)
 
   return (
@@ -16,7 +54,7 @@ export default function ContactForm() {
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact us</h2>
     
       </div>
-      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form onSubmit={handleSubmit} method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className=" gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
@@ -25,8 +63,8 @@ export default function ContactForm() {
             <div className="mt-2.5">
               <input
                 type="text"
-                name="first-name"
-                id="first-name"
+                name="firstName"
+                id="firstName"
                 autoComplete="given-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -57,8 +95,8 @@ export default function ContactForm() {
               </div>
               <input
                 type="tel"
-                name="phone-number"
-                id="phone-number"
+                name="phoneNumber"
+                id="phoneNumber"
                 autoComplete="tel"
                 className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -114,6 +152,21 @@ export default function ContactForm() {
           >
             Let's talk
           </button>
+          {isModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div className="modal-bg fixed inset-0 bg-black opacity-50"></div>
+          <div className="modal-content bg-white p-4 rounded-lg shadow-lg z-50">
+            <p className="text-lg font-semibold text-green-600">Submission Successful!</p>
+            <p>Your submission was successful. Thank you!</p>
+            <button
+              onClick={closeModal}
+              className="mt-4 bg-red-600 text-white py-2 px-4 rounded hover:bg-red-500"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
         </div>
       </form>
     </div>
