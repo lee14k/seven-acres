@@ -1,3 +1,4 @@
+import Link from 'next/link'
 export default function TreeFill() {
     return (
       <div className="bg-white py-24 sm:py-32">
