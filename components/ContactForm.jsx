@@ -81,8 +81,8 @@ export default function ContactForm() {
                   />
                 </dt>
                 <dd className="text-2xl">
-                  1837 3rd Avenue North <br />
-                  Escanaba, MI 49829{" "}
+                5253 I Road  <br />
+                Escanaba, MI. 49829{" "}
                 </dd>
               </div>
               <div className="flex gap-x-4">
@@ -96,9 +96,9 @@ export default function ContactForm() {
                 <dd className="text-2xl">
                   <a
                     className="hover:text-gray-900"
-                    href="tel:+1 (555) 234-5678"
+                    href="tel:+1 906-723-3086"
                   >
-                    (906) 261-9159
+                    906-723-3086
                   </a>
                 </dd>
               </div>
@@ -113,9 +113,9 @@ export default function ContactForm() {
                 <dd className="text-2xl">
                   <a
                     className="hover:text-gray-900"
-                    href="mailto:haleystationevents@gmail.com"
+                    href="mailto:SevenAcreGardens@outlook.com"
                   >
-                    haleystationevents@gmail.com
+                    SevenAcreGardens@outlook.com
                   </a>
                 </dd>
               </div>

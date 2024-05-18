@@ -667,3 +667,8 @@
     align-items: center;
   }
 }
+
+.contact-side-one{
+  background-image:url('/Flowers_Lo-Res-8316.jpg');
+  background-size: cover;
+}
