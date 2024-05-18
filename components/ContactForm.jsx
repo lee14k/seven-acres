@@ -136,13 +136,7 @@ export default function ContactForm() {
                 />
               </Switch>
             </div>
-            <Switch.Label className="text-sm leading-6 text-gray-600">
-              By selecting this, you agree to our{' '}
-              <a href="#" className="font-semibold text-indigo-600">
-                privacy&nbsp;policy
-              </a>
-              .
-            </Switch.Label>
+         
           </Switch.Group>
         </div>
         <div className="mt-10">
