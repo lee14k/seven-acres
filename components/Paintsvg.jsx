@@ -1,6 +1,6 @@
 const Paintsvg = () => {
     return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="900" viewBox="0 0 1000 800">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="900" viewBox="0 0 1000 800" className="svg-responsive sm:block hidden">
         <defs>
           {/* Adjust pattern size to fit the viewBox */}
           <pattern id="image-pattern" patternUnits="userSpaceOnUse" width="1000" height="800">

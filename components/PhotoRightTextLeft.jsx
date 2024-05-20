@@ -10,11 +10,11 @@ const PhotoRightTextLeft = () => {
  src='/sa.png'
  height={400}
  width={400}
- className="absolute bottom-10 left-128 z-10"
+ className="lg:absolute lg:bottom-10 left-128 z-10"
 
 />
       </div>
-      <div className=" lg:flex flex-col justify-center items-center ml-24">
+      <div className="text-center lg:flex flex-col justify-center items-center lg:ml-24">
         <h1 className="text-6xl">
         Flowers, trees, and more
         </h1>

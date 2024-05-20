@@ -676,3 +676,10 @@
   background: rgba(0,0,0,0.5);
   backdrop-filter: saturate(180%) blur(10px);
 }
+
+.svg-responsive {
+  width: 100%;      
+  height: auto;      
+  max-width: 1200px;  
+  max-height: 850px; 
+}
