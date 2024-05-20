@@ -18,7 +18,7 @@ const PhotoRightTextLeft = () => {
         <h1 className="text-6xl">
         Flowers, trees, and more
         </h1>
-        <p className="text-3xl">Local blooms at affordable prices. Seven Acre Gardens is the premier stop for all of your landscaping, floral, and tree needs. Come check us out and see the gorgeous blooms we have to offer</p>
+        <p className="text-3xl">Local blooms at affordable prices. Seven Acre Garden has you covered with beautiful flowers, vegetables, trees, herbs, and so much more. Come check us out and see the gorgeous blooms we have to offer, located just outside of Escanaba, MI.</p>
       </div>
     
     </div>
