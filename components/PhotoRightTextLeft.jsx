@@ -14,7 +14,7 @@ const PhotoRightTextLeft = () => {
 
 />
       </div>
-      <div className=" lg:flex flex-col justify-center items-center">
+      <div className=" lg:flex flex-col justify-center items-center ml-24">
         <h1 className="text-6xl">
         Flowers, trees, and more
         </h1>
