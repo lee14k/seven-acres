@@ -37,6 +37,7 @@ function Homeslider() {
           height={900}
           width={900}
           className="overlay-logo"
+          alt="Seven Acre Gardens Logo"
           />
       <div className="indicator">
         {images.map((_, index) => (
